@@ -12,7 +12,6 @@ const program = require('commander');
 
 program
   .version(require('./package.json').version) //定义版本号,由本模块 package.json 的version决定
-  .command('track')
   .description('track source.map.map')
   .action(track);
 
