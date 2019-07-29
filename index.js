@@ -25,9 +25,9 @@ function track() {
   // 启动构建进程（已构建则不需要）
   const exec = require('child_process').exec;
 
-  const lineNo = process.argv[3] || 0;
-  const columnNo = process.argv[4] || 0;
-  const file = process.argv[5] || '';
+  const lineNo = process.argv[2] || 0;
+  const columnNo = process.argv[3] || 0;
+  const file = process.argv[4] || '';
 
   // 构建有map的线上代码
   // node build onlineMap为构建命令
