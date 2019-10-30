@@ -5,17 +5,16 @@
  * 示例：node index.js 1861 6449 app-service.map.map
  * 第一个参数为行数，第二个参数为列数，第三个参数为SourceMap文件
  */
-import fs from 'fs'
-import sourceMap from 'source-map'
-import program from 'commander'
+const fs = require('fs');
+const sourceMap = require('source-map');
+const program = require('commander');
 
 program
-  .version(require('./package.json').version) //定义版本号,由本模块 package.json 的version决定
+  .version(require('./package.json').version) // 定义版本号,由本模块 package.json 的version决定
   .description('track source.map.map')
   .action(track);
 
 program.parse(process.argv);
-
 
 function track() {
   // sourceMap处理文件
