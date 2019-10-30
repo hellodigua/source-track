@@ -1,6 +1,6 @@
 {
   "name": "source-track",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -12,10 +12,10 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "fs": "0.0.1-security",
-    "source-map": "^0.7.3"
+    "fs": "0.0.1-security"
   },
   "dependencies": {
-    "commander": "^2.20.0"
+    "commander": "^2.20.0",
+    "source-map": "^0.7.3"
   }
 }
